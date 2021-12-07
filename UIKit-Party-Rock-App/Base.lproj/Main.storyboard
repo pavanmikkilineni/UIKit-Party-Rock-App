@@ -70,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="257" width="428" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Tg1-hb-Frs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="85" id="Tg1-hb-Frs" customClass="PartyCell" customModule="UIKit_Party_Rock_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tg1-hb-Frs" id="gg5-qy-XHC">
@@ -105,6 +105,10 @@
                                                 <constraint firstItem="HUp-Wi-nqb" firstAttribute="bottom" secondItem="gg5-qy-XHC" secondAttribute="bottomMargin" id="xkS-OQ-IFn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="vedioPreviewImage" destination="hj5-ML-jQp" id="3PX-ED-skD"/>
+                                            <outlet property="vedioTitle" destination="HUp-Wi-nqb" id="6GC-cK-0YR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -128,6 +132,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="d93-6S-Fzy" id="pWV-gG-hax"/>
                         <segue destination="0af-Zg-hIj" kind="showDetail" id="dEM-Lg-BX5"/>
                     </connections>
                 </viewController>

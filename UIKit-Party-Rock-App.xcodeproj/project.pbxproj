@@ -15,6 +15,8 @@
 		39BB83C0275EF616004DFB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83BE275EF616004DFB19 /* LaunchScreen.storyboard */; };
 		39BB83CB275F1841004DFB19 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83CA275F1841004DFB19 /* still time.ttf */; };
 		39BB83CD275F1A2F004DFB19 /* VedioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83CC275F1A2F004DFB19 /* VedioVC.swift */; };
+		39BB83CF275F1DE5004DFB19 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83CE275F1DE5004DFB19 /* PartyCell.swift */; };
+		39BB83D1275F1F8C004DFB19 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83D0275F1F8C004DFB19 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		39BB83C1275EF616004DFB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39BB83CA275F1841004DFB19 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		39BB83CC275F1A2F004DFB19 /* VedioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioVC.swift; sourceTree = "<group>"; };
+		39BB83CE275F1DE5004DFB19 /* PartyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		39BB83D0275F1F8C004DFB19 /* PartyRock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		39BB83C8275EFCE3004DFB19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39BB83CE275F1DE5004DFB19 /* PartyCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		39BB83C9275EFCF1004DFB19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39BB83D0275F1F8C004DFB19 /* PartyRock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BB83CD275F1A2F004DFB19 /* VedioVC.swift in Sources */,
+				39BB83D1275F1F8C004DFB19 /* PartyRock.swift in Sources */,
+				39BB83CF275F1DE5004DFB19 /* PartyCell.swift in Sources */,
 				39BB83B8275EF60A004DFB19 /* MainVC.swift in Sources */,
 				39BB83B4275EF60A004DFB19 /* AppDelegate.swift in Sources */,
 				39BB83B6275EF60A004DFB19 /* SceneDelegate.swift in Sources */,
