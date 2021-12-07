@@ -24,7 +24,7 @@ class PartyCell: UITableViewCell {
         DispatchQueue.global().async {
             do{
                 let data=try Data(contentsOf: url)
-                DispatchQueue.global().sync {
+                DispatchQueue.main.async {
                     self.vedioPreviewImage.image=UIImage(data: data)
 
                 }
