@@ -148,26 +148,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zx7-IH-f4m">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="250"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxK-fv-Fde">
+                                <rect key="frame" x="0.0" y="381" width="428" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="JOa-5O-8WF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="897-ww-56H">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="267"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="POA-yi-KSX"/>
+                                    <constraint firstAttribute="height" constant="267" id="XUw-9d-O8a"/>
                                 </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                            </webView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rW4-Y6-ay2"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="Zx7-IH-f4m" firstAttribute="top" secondItem="rW4-Y6-ay2" secondAttribute="top" id="GeG-Mz-pUo"/>
-                            <constraint firstItem="rW4-Y6-ay2" firstAttribute="trailing" secondItem="Zx7-IH-f4m" secondAttribute="trailing" id="QKL-zb-ZHm"/>
-                            <constraint firstItem="Zx7-IH-f4m" firstAttribute="leading" secondItem="rW4-Y6-ay2" secondAttribute="leading" id="llF-Yn-gjZ"/>
+                            <constraint firstItem="cxK-fv-Fde" firstAttribute="trailing" secondItem="rW4-Y6-ay2" secondAttribute="trailing" id="9HI-d6-TP6"/>
+                            <constraint firstItem="897-ww-56H" firstAttribute="trailing" secondItem="rW4-Y6-ay2" secondAttribute="trailing" id="Rrh-9E-jeK"/>
+                            <constraint firstItem="cxK-fv-Fde" firstAttribute="leading" secondItem="rW4-Y6-ay2" secondAttribute="leading" id="V4Q-qh-42Y"/>
+                            <constraint firstItem="897-ww-56H" firstAttribute="leading" secondItem="rW4-Y6-ay2" secondAttribute="leading" id="jcf-Gg-OdP"/>
+                            <constraint firstItem="897-ww-56H" firstAttribute="top" secondItem="rW4-Y6-ay2" secondAttribute="top" id="naI-vk-XCW"/>
+                            <constraint firstItem="cxK-fv-Fde" firstAttribute="centerY" secondItem="aTo-sV-xjf" secondAttribute="centerY" id="oE7-Ak-1g7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vedioTitle" destination="cxK-fv-Fde" id="S8n-Nv-KJv"/>
+                        <outlet property="webView" destination="897-ww-56H" id="MNu-pJ-nfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qji-3f-Klv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

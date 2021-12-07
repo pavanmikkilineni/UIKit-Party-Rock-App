@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainVC: UIViewController,UITableViewDelegate {
+class MainVC: UIViewController {
     
     var  partyRocks=[PartyRock]()
     
@@ -33,6 +33,20 @@ class MainVC: UIViewController,UITableViewDelegate {
     }
 
 
+}
+
+extension MainVC:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "VedioVC", sender: partyRocks[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination=segue.destination as? VedioVC {
+            if let party=sender as? PartyRock{
+                destination.partyRock=party
+            }
+        }
+    }
 }
 
 extension MainVC:UITableViewDataSource{
