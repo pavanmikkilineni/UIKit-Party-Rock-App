@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		39BB83B4275EF60A004DFB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83B3275EF60A004DFB19 /* AppDelegate.swift */; };
 		39BB83B6275EF60A004DFB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83B5275EF60A004DFB19 /* SceneDelegate.swift */; };
-		39BB83B8275EF60A004DFB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83B7275EF60A004DFB19 /* ViewController.swift */; };
+		39BB83B8275EF60A004DFB19 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83B7275EF60A004DFB19 /* MainVC.swift */; };
 		39BB83BB275EF60A004DFB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83B9275EF60A004DFB19 /* Main.storyboard */; };
 		39BB83BD275EF616004DFB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83BC275EF616004DFB19 /* Assets.xcassets */; };
 		39BB83C0275EF616004DFB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83BE275EF616004DFB19 /* LaunchScreen.storyboard */; };
+		39BB83CB275F1841004DFB19 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BB83CA275F1841004DFB19 /* still time.ttf */; };
+		39BB83CD275F1A2F004DFB19 /* VedioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BB83CC275F1A2F004DFB19 /* VedioVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39BB83B0275EF60A004DFB19 /* UIKit-Party-Rock-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-Party-Rock-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BB83B3275EF60A004DFB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39BB83B5275EF60A004DFB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39BB83B7275EF60A004DFB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39BB83B7275EF60A004DFB19 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		39BB83BA275EF60A004DFB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39BB83BC275EF616004DFB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39BB83BF275EF616004DFB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39BB83C1275EF616004DFB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BB83CA275F1841004DFB19 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		39BB83CC275F1A2F004DFB19 /* VedioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		39BB83B2275EF60A004DFB19 /* UIKit-Party-Rock-App */ = {
 			isa = PBXGroup;
 			children = (
+				39BB83CA275F1841004DFB19 /* still time.ttf */,
+				39BB83C9275EFCF1004DFB19 /* Model */,
+				39BB83C8275EFCE3004DFB19 /* View */,
+				39BB83C7275EFC96004DFB19 /* Controller */,
 				39BB83B3275EF60A004DFB19 /* AppDelegate.swift */,
 				39BB83B5275EF60A004DFB19 /* SceneDelegate.swift */,
-				39BB83B7275EF60A004DFB19 /* ViewController.swift */,
 				39BB83B9275EF60A004DFB19 /* Main.storyboard */,
 				39BB83BC275EF616004DFB19 /* Assets.xcassets */,
 				39BB83BE275EF616004DFB19 /* LaunchScreen.storyboard */,
 				39BB83C1275EF616004DFB19 /* Info.plist */,
 			);
 			path = "UIKit-Party-Rock-App";
+			sourceTree = "<group>";
+		};
+		39BB83C7275EFC96004DFB19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39BB83B7275EF60A004DFB19 /* MainVC.swift */,
+				39BB83CC275F1A2F004DFB19 /* VedioVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39BB83C8275EFCE3004DFB19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39BB83C9275EFCF1004DFB19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BB83C0275EF616004DFB19 /* LaunchScreen.storyboard in Resources */,
+				39BB83CB275F1841004DFB19 /* still time.ttf in Resources */,
 				39BB83BD275EF616004DFB19 /* Assets.xcassets in Resources */,
 				39BB83BB275EF60A004DFB19 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BB83B8275EF60A004DFB19 /* ViewController.swift in Sources */,
+				39BB83CD275F1A2F004DFB19 /* VedioVC.swift in Sources */,
+				39BB83B8275EF60A004DFB19 /* MainVC.swift in Sources */,
 				39BB83B4275EF60A004DFB19 /* AppDelegate.swift in Sources */,
 				39BB83B6275EF60A004DFB19 /* SceneDelegate.swift in Sources */,
 			);
